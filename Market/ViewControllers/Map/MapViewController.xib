@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="montserrat_bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="Market" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="gKD-iI-z5D">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hangi Mağazada Var ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LX5-er-eiy">
+                    <rect key="frame" x="20" y="64" width="374" height="25"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
+                    <color key="textColor" name="black"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RL0-99-ej6">
+                    <rect key="frame" x="0.0" y="89" width="414" height="808"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="414" id="FUK-0k-pYu"/>
+                        <constraint firstAttribute="height" constant="808" id="viO-Pa-SPF"/>
+                    </constraints>
+                </mapView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="8C2-Ro-LDU"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="RL0-99-ej6" firstAttribute="top" secondItem="LX5-er-eiy" secondAttribute="bottom" id="38V-zr-zzw"/>
+                <constraint firstItem="LX5-er-eiy" firstAttribute="leading" secondItem="8C2-Ro-LDU" secondAttribute="leading" constant="20" id="6ud-Su-FhN"/>
+                <constraint firstItem="LX5-er-eiy" firstAttribute="top" secondItem="8C2-Ro-LDU" secondAttribute="top" constant="20" id="Fjy-xU-KQU"/>
+                <constraint firstItem="8C2-Ro-LDU" firstAttribute="trailing" secondItem="LX5-er-eiy" secondAttribute="trailing" constant="20" id="Kf2-vq-he1"/>
+                <constraint firstItem="RL0-99-ej6" firstAttribute="leading" secondItem="8C2-Ro-LDU" secondAttribute="leading" id="Py0-7t-mrg"/>
+                <constraint firstItem="8C2-Ro-LDU" firstAttribute="trailing" secondItem="RL0-99-ej6" secondAttribute="trailing" id="gLW-b6-5nQ"/>
+                <constraint firstItem="8C2-Ro-LDU" firstAttribute="bottom" secondItem="RL0-99-ej6" secondAttribute="bottom" constant="-35" id="oAS-s5-SQj"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="black">
+            <color red="0.10199999809265137" green="0.125" blue="0.17299999296665192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="montserrat_bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CartViewController" customModule="Market" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="WoN-3J-FNU">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="NJe-c0-qoY">
+                    <rect key="frame" x="0.0" y="128" width="414" height="658"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="q71-cd-8jB">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sepetim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBI-aN-PGH">
+                    <rect key="frame" x="20" y="64" width="374" height="44"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="36"/>
+                    <color key="textColor" name="black"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alG-N7-Z1U">
+                    <rect key="frame" x="20" y="794" width="374" height="48"/>
+                    <color key="backgroundColor" name="green"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="G6j-Or-MXt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Satın Al">
+                        <color key="titleColor" name="lightGray"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="PEG-P5-EcL"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="PEG-P5-EcL" firstAttribute="bottom" secondItem="alG-N7-Z1U" secondAttribute="bottom" constant="20" id="6QM-9L-XeJ"/>
+                <constraint firstItem="PEG-P5-EcL" firstAttribute="trailing" secondItem="NJe-c0-qoY" secondAttribute="trailing" id="Dh1-Bs-IEY"/>
+                <constraint firstItem="NJe-c0-qoY" firstAttribute="top" secondItem="RBI-aN-PGH" secondAttribute="bottom" constant="20" id="LKc-Ap-Ucx"/>
+                <constraint firstItem="alG-N7-Z1U" firstAttribute="leading" secondItem="PEG-P5-EcL" secondAttribute="leading" constant="20" id="RBE-j0-h7H"/>
+                <constraint firstItem="PEG-P5-EcL" firstAttribute="trailing" secondItem="alG-N7-Z1U" secondAttribute="trailing" constant="20" id="XsJ-pj-WoG"/>
+                <constraint firstItem="RBI-aN-PGH" firstAttribute="top" secondItem="PEG-P5-EcL" secondAttribute="top" constant="20" id="auJ-tN-6dY"/>
+                <constraint firstItem="alG-N7-Z1U" firstAttribute="top" secondItem="NJe-c0-qoY" secondAttribute="bottom" constant="8" id="dC7-9U-pmm"/>
+                <constraint firstItem="NJe-c0-qoY" firstAttribute="leading" secondItem="PEG-P5-EcL" secondAttribute="leading" id="jRf-BX-Xb4"/>
+                <constraint firstItem="PEG-P5-EcL" firstAttribute="trailing" secondItem="RBI-aN-PGH" secondAttribute="trailing" constant="20" id="ug8-Mg-g23"/>
+                <constraint firstItem="RBI-aN-PGH" firstAttribute="leading" secondItem="PEG-P5-EcL" secondAttribute="leading" constant="20" id="v8Z-qU-QWL"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="86.383928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="black">
+            <color red="0.10199999809265137" green="0.125" blue="0.17299999296665192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="green">
+            <color red="0.0" green="0.80000001192092896" blue="0.58799999952316284" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightGray">
+            <color red="0.9649999737739563" green="0.96899998188018799" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
